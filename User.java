@@ -76,7 +76,6 @@ public class User {
 		
 		@SuppressWarnings("resource")
 		BufferedReader pW = new BufferedReader(new FileReader("password.txt"));
-		@SuppressWarnings("unused")
 		ArrayList<String> password = new ArrayList<String>();
 		String pass = pW.readLine();
 		while(pass !=null)

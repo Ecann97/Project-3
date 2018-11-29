@@ -1,24 +1,26 @@
 import java.util.ArrayList;
+
+import javax.swing.JTextField;
+
+import java.awt.Container;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
 public class Interface {
 
+	
 	static User u = new User();
 	static Order o = new Order();
 	static Address a = new Address();
 	
-	public static ArrayList<String> user_Information() 
+	public static boolean user_Information(String c) 
 	{
 		ArrayList<String> user_Info = new ArrayList<String>();
-		user_Info.add(u.getFirst_Name());
-		user_Info.add(u.getLast_Name());
-		user_Info.add(u.getAddress());
-		user_Info.add(u.getEmail());
-		user_Info.add(u.getPassword());
+
 		
-		return user_Info;
+		return user_Info.add(c);
+		
 	}
 	
 	public static ArrayList<Object> order_Information()
@@ -44,6 +46,8 @@ public class Interface {
 		
 		return address_Info;
 	}
+
+	
 	
 	
 }
